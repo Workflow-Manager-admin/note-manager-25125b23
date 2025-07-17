@@ -1,0 +1,55 @@
+.TopNav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color, #e9ecef);
+  background: #fff;
+  padding: 0 32px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.TopNavTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary, #1976d2);
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.TopNavActions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.ThemeToggleBtn {
+  border: 1.5px solid #e0e0e0;
+  background: #fafafa;
+  border-radius: 8px;
+  font-size: 1.36rem;
+  cursor: pointer;
+  padding: 7px 14px;
+  font-weight: 600;
+  color: #555;
+  transition: background .18s;
+}
+
+.ThemeToggleBtn:hover {
+  background: #e3f2fd;
+  color: var(--primary, #1976d2);
+}
+
+@media (max-width: 600px) {
+  .TopNav {
+    padding: 0 10px;
+    height: 47px;
+  }
+  .TopNavTitle {
+    font-size: 1.15rem;
+  }
+}
