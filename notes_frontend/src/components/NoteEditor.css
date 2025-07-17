@@ -1,0 +1,93 @@
+.NoteEditor {
+  display: flex;
+  flex-direction: column;
+  max-width: 690px;
+  margin: 30px auto;
+  gap: 15px;
+  background: var(--bg-secondary, #f8f9fa);
+  border-radius: 12px;
+  padding: 30px 28px;
+  box-shadow: 0 2px 10px rgba(60,60,60,0.05);
+  border: 1px solid var(--border-color, #e9ecef);
+}
+
+.NoteTitleInput {
+  font-size: 1.25rem;
+  padding: 8px 8px 10px 8px;
+  border: none;
+  border-bottom: 1px solid var(--border-color, #e9ecef);
+  background: none;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.NoteTitleInput:focus {
+  outline: none;
+  border-color: var(--primary, #1976d2);
+  background: #e3f2fd;
+}
+
+.NoteBodyInput {
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 10px;
+  border: 1px solid var(--border-color, #e9ecef);
+  border-radius: 8px;
+  resize: vertical;
+  background: #fff;
+  min-height: 150px;
+  margin-bottom: 12px;
+}
+
+.NoteBodyInput:focus {
+   outline: none;
+   border-color: var(--primary, #1976d2);
+   background: #f1fafe;
+}
+
+.NoteEditorActions {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.BtnPrimary {
+  background: var(--primary, #1976d2);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  font-size: 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(80,80,110,0.03);
+  transition: background .2s;
+}
+
+.BtnPrimary:hover {
+  background: #145ea4;
+}
+
+.BtnSecondary {
+  background: #fff;
+  color: var(--primary, #1976d2);
+  border: 1.5px solid var(--primary, #1976d2);
+  padding: 10px 22px;
+  font-size: 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background .2s, border-color .2s;
+}
+
+.BtnSecondary:hover {
+  background: #e3f2fd;
+}
+
+@media (max-width: 600px) {
+  .NoteEditor {
+    padding: 18px 8px;
+  }
+}
